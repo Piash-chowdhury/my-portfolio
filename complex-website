@@ -1,0 +1,14 @@
+complex-website/
+├── index.html
+├── about.html
+├── projects.html
+├── publications.html
+├── contact.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── scripts.js
+│   ├── images/
+│   └── logos/
+└── README.md
