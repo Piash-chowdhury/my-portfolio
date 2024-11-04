@@ -1,0 +1,322 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #7f00ff, #e100ff); /* Purple-Pink Gradient */
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Navigation Bar */
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Main Content */
+main {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+}
+
+/* Headings */
+h1, h2 {
+    color: #4b0082;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffd700;
+    margin: 10px auto;
+    animation: expandLine 0.7s ease-out;
+}
+
+/* Footer */
+footer {
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+ul li:hover {
+    color: #ff1493;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes expandLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60px;
+    }
+}
+
+/* Buttons */
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+/* About Section */
+#about {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.profile-pic-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-pic-wrapper:hover {
+    transform: scale(1.05);
+}
+
+#about h2 {
+    color: #4b0082;
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+#about p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0.5rem auto;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Hover Effect for Profile Pic */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .profile-pic-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* University Logo */
+.university-logo {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.university-logo img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.university-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Education Section */
+.education-section {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.education-section h2 {
+    color: #4b0082;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Education Table */
+.education-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.education-table th, .education-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.education-table th {
+    background-color: #4b0082;
+    color: white;
+}
+
+.education-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.education-table td {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Thesis Image Styling */
+.education-table td a img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.education-table td a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.education-table td p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .education-table th, .education-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .education-table td a img {
+        width: 80px;
+    }
+}
