@@ -233,14 +233,16 @@ button:hover {
     margin: 2rem 0;
 }
 
-.university-logo img {
+.university-logo .circular-logo {
     width: 150px;
-    height: auto;
-    transition: transform 0.3s;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.university-logo img:hover {
+.university-logo .circular-logo:hover {
     transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Education Section */
@@ -265,6 +267,7 @@ button:hover {
     max-width: 800px;
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout: fixed; /* Ensures equal column width */
 }
 
 .education-table th, .education-table td {
@@ -276,10 +279,8 @@ button:hover {
 .education-table th {
     background-color: #4b0082;
     color: white;
-}
-
-.education-table tr:hover {
-    background-color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
 }
 
 .education-table td {
@@ -287,27 +288,10 @@ button:hover {
     font-size: 1rem;
 }
 
-/* Thesis Image Styling */
-.education-table td a img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: block;
-    margin: 0 auto;
+.education-table tr:hover {
+    background-color: #f2f2f2;
 }
 
-.education-table td a img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.education-table td p {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    color: #333;
-}
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
@@ -319,4 +303,40 @@ button:hover {
     .education-table td a img {
         width: 80px;
     }
+}
+
+/* Research Page Styling */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: #4b0082;
+    margin-top: 1.5rem;
+}
+
+ol, ul {
+    padding-left: 1.5rem;
+}
+
+ol li, ul li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
 }
