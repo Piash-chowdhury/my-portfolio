@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Piash Chowdhury</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* University Logos Section Styling */
+        .university-logo {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .circular-logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 2px solid #444;
+            background-color: #fff;
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .circular-logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,19 +45,35 @@
     <main>
         <section>
             <h2>About Piash Chowdhury</h2>
-            <p>I am Piash Chowdhury, a Senior GIS Analyst with expertise in hydrodynamic modelling,  geospatial analysis, remote sensing, and machine learning. I hold degrees in Geography and Environment from Shahjalal University of Science and Technology, Bangladesh. My research and professional experience focus on environmental modeling, hydrodynamic simulations, and applying AI to natural hazard assessment. My goal is to advance sustainable solutions through geospatial technology and AI is environmental Modelling and Water resources Managment.</p>
-            <br>
-        <!-- University Logo with Link -->
+            <p>
+                Motivated graduate student in <strong>Civil Engineering</strong> specializing in <strong>Coastal and Port Engineering</strong>, 
+                with hands-on experience in <strong>hydrodynamic and water quality modelling, GIS, and remote sensing</strong>.  
+                Currently pursuing a Master's degree at the  <a href="https://www.unf.edu/" target="_blank">University of North Florida</a>, 
+                where my research focuses on <strong>hydrodynamic and water quality modelling of the St. Johns River Estuary</strong>. 
+                Experienced as a <strong> Lead GIS Analyst</strong> with expertise in environmental modelling, 
+                flood risk assessment, and AI-driven solutions for natural hazard management. 
+                Passionate about leveraging geospatial technology, machine learning, and data-driven approaches to advance 
+                sustainable water resources management and support coastal and marine process understanding.
+            </p>
+        </section>
+
+        <!-- University Logos Section -->
         <section class="university-logo">
-            <a href="https://www.sust.edu/d/gee" target="_blank">
+            <!-- SUST Logo -->
+            <a href="https://www.sust.edu/" target="_blank" title="Shahjalal University of Science and Technology">
                 <img src="images/sust_logo.png" alt="SUST Logo" class="circular-logo">
+            </a>
+
+            <!-- UNF Logo -->
+            <a href="https://www.unf.edu/" target="_blank" title="University of North Florida">
+                <img src="images/unf_logo.png" alt="UNF Logo" class="circular-logo">
             </a>
         </section>
 
         <!-- Educational Background Table -->
         <section class="education-section">
             <h2>Educational Background</h2>
-                <table class="education-table">
+            <table class="education-table">
                 <tr>
                     <th>Degree</th>
                     <th>Institution</th>
@@ -42,13 +82,21 @@
                     <th>Thesis</th>
                 </tr>
                 <tr>
+                    <td>Master of Science in Civil Engineering (Major in Coastal and Port Engineering)</td>
+                    <td>University of North Florida</td>
+                    <td>College of Computing, Engineering and Construction</td>
+                    <td>Expected: 2027</td>
+                    <td>
+                        <p>TBD: Hydrodynamic and Water Quality Modelling of the St. Johns River Estuary</p>
+                    </td>
+                </tr>      
+                <tr>
                     <td>Master of Science in Geography and Environment</td>
                     <td>Shahjalal University of Science and Technology, Sylhet</td>
                     <td>School of Physical Sciences</td>
                     <td>2022</td>
                     <td>
                         <a href="https://doi.org/10.1007/s12524-024-02037-3" target="_blank">
-                           <!--   <img src="images/Ms_Thesis.jpg" alt="Thesis 1 Image">  !-->
                             <p>Yield Sedimentation Risk Assessment in the Surma-Meghna River System</p>
                         </a>
                     </td>
@@ -60,25 +108,26 @@
                     <td>2019</td>
                     <td>
                         <a href="https://doi.org/10.1007/s11852-023-01000-7" target="_blank">
-                         <!--   <img src="images/Bsc_thesis.png" alt="Thesis 2 Image"> !-->
-                            <p>Shoreline Dynamics of Reserved Region of Meghna Estuary and It Impacts on LULC and Socio-Economic: A Case Study on Nijhum Dwip</p>
+                            <p>Shoreline Dynamics of Reserved Region of Meghna Estuary and Its Impacts on LULC and Socio-Economic: A Case Study on Nijhum Dwip</p>
                         </a>
                     </td>
                 </tr>
             </table>
         </section>
+
         <section>
             <h2>Technical Experience</h2>
             <ul>
                 <li><strong>GIS and Remote Sensing:</strong> Proficient in ArcGIS, QGIS, and ERDAS IMAGINE for spatial analysis, geospatial data visualization, and remote sensing applications.</li>
-                <li><strong>Hydrodynamic and Surface Water Modeling:</strong> Skilled in using software like HEC-RAS and MIKE 21 for modeling water flow and flood dynamics in riverine and coastal systems.</li>
-                <li><strong>Programming Languages:</strong> Experienced in Python and R for data analysis, machine learning, and environmental modeling, with applications in geospatial data processing.</li>
+                <li><strong>Hydrodynamic and Surface Water Modeling:</strong> Skilled in using software like Delft-3D and MIKE 11/21 for modeling water flow and flood dynamics in riverine and coastal systems.</li>
+                <li><strong>Programming Languages:</strong> Experienced in Python for data analysis, machine learning, and environmental modeling, with applications in geospatial data processing.</li>
                 <li><strong>LiDAR Data Processing:</strong> Expertise in LiDAR data analysis for topographic mapping, vegetation monitoring, and surface elevation modeling.</li>
                 <li><strong>Machine Learning and AI:</strong> Application of machine learning algorithms for predictive modeling and risk assessment in environmental studies.</li>
                 <li><strong>Data Analysis:</strong> Competent in using SPSS and Microsoft Excel for statistical analysis and data management.</li>
             </ul>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Piash Chowdhury. All Rights Reserved.</p>
     </footer>
