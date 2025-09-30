@@ -32,17 +32,17 @@ var events = [
         title: "BSc Thesis on Nijhum Dwip",
         description: "Thesis focused on shoreline dynamics and socio-economic impacts in Nijhum Dwip.",
         date: "2019",
-        link: "https://doi.org/10.1007/s11852-023-01000-7" // Example link to publication
+        link: "https://doi.org/10.1007/s11852-023-01000-7"
     },
     {
         coords: [22.7811, 90.3495], // Meghna Estuary (MS Thesis)
         title: "MS Thesis on Meghna Estuary",
         description: "Studied sedimentation risk in the Meghna estuary as part of my MS thesis.",
         date: "2022",
-        link: "https://doi.org/10.1007/s12524-024-02037-3" // New MS thesis publication link
+        link: "https://doi.org/10.1007/s12524-024-02037-3"
     },
     {
-        coords: [24.920007427478613, 91.8316944004021], // SUST Library Building (Research Assistant role)
+        coords: [24.920007427478613, 91.8316944004021], // SUST Library Building
         title: "Research Assistant at SUST Library Building",
         description: "Worked as a Research Assistant on coastal morphodynamics projects.",
         date: "2019-2020"
@@ -61,10 +61,23 @@ var events = [
     },
     {
         coords: [49.5656, 10.9707], // Spekter GmbH, Germany
-        title: "Senior GIS Analyst at Spekter GmbH, Germany",
+        title: "Lead GIS Analyst at Spekter GmbH, Germany",
         description: "Conducted flood risk analysis and modeled heavy rain-induced flash floods.",
-        date: "2020 - Ongoing",
+        date: "2020 - 2025",
         link: "https://www.spekter.de"
+    },
+    {
+        coords: [30.2682, -81.5073], // University of North Florida
+        title: "University of North Florida (UNF)",
+        description: "Pursuing MS in Civil Engineering (Coastal and Port Engineering).",
+        date: "2025 - Present",
+        link: "https://www.unf.edu"
+    },
+    {
+        coords: [30.3933, -81.3912], // St. Johns River Estuary (Approximate near Jacksonville)
+        title: "St. Johns River Estuary Research",
+        description: "Hydrodynamic and water quality modeling for MS thesis work.",
+        date: "2025 - Ongoing"
     }
 ];
 
@@ -78,3 +91,4 @@ events.forEach(function(event) {
             ${event.link ? `<a href="${event.link}" target="_blank">Learn more</a>` : ""}
         `);
 });
+
