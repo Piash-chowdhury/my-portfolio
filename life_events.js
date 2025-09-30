@@ -1,5 +1,7 @@
 // Initialize the map
-var map = L.map('map').setView([23.6850, 90.3563], 6); // Centered on Bangladesh
+// Initialize the map - Centered globally to show Bangladesh, Germany, and USA together
+var map = L.map('map').setView([30, 20], 2); // Center near Africa/Atlantic for a global view, zoomed out
+
 
 // Add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -91,4 +93,5 @@ events.forEach(function(event) {
             ${event.link ? `<a href="${event.link}" target="_blank">Learn more</a>` : ""}
         `);
 });
+
 
